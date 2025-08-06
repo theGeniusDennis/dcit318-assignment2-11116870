@@ -1,6 +1,7 @@
 ﻿using System;
 using ConsoleApplication.Inheritance;
 using ConsoleApplication.Abstraction;
+using ConsoleApplication.Interfaces;
 
 namespace ConsoleApplication
 {
@@ -23,6 +24,12 @@ namespace ConsoleApplication
 
             Console.WriteLine($"Circle area: {circle.GetArea():F2}");      // Output: Circle area: 78.54
             Console.WriteLine($"Rectangle area: {rectangle.GetArea():F2}"); // Output: Rectangle area: 24.00
+            // Interfaces Demo
+            IMovable car = new Car();
+            IMovable bicycle = new Bicycle();
+
+            car.Move();      // Output: Car is moving
+            bicycle.Move();  // Output: Bicycle is moving
         }
     }
 }
