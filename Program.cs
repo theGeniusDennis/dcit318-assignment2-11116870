@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using ConsoleApplication.Inheritance;
 
 namespace ConsoleApplication
