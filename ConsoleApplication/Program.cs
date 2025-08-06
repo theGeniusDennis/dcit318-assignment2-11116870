@@ -1,5 +1,6 @@
 ﻿using System;
 using ConsoleApplication.Inheritance;
+using ConsoleApplication.Abstraction;
 
 namespace ConsoleApplication
 {
@@ -15,6 +16,13 @@ namespace ConsoleApplication
             genericAnimal.MakeSound(); // Output: Some generic sound
             dog.MakeSound();           // Output: Bark
             cat.MakeSound();           // Output: Meow
+
+            // Abstract Classes and Methods Demo
+            Shape circle = new Circle(5);
+            Shape rectangle = new Rectangle(4, 6);
+
+            Console.WriteLine($"Circle area: {circle.GetArea():F2}");      // Output: Circle area: 78.54
+            Console.WriteLine($"Rectangle area: {rectangle.GetArea():F2}"); // Output: Rectangle area: 24.00
         }
     }
 }
